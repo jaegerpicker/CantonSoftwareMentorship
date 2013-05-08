@@ -7,14 +7,16 @@ def strPosition(s, o):
             #print 'yep'
             return i
     return 0
-
+#open the file to read samples form. This is done naively without validation, Bad ideain production code
 inputData = open(sys.argv[1], 'r')
 lineNum = 0
 rows = 0
+#read all of the samples in
 samples = inputData.readlines()
-
+#loop of each in in the file in this example shoul only be one but it's flexible for more
 for line in samples:
     #print line
+    #split the sample line into an array
     data = line.split(',')
     searchStr = data[1].replace('\n','')
     searchee = data[0]
