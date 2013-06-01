@@ -1,0 +1,12 @@
+Hello,ell
+This is good, is
+CodeEval,C*Eval
+Old,Young
+Old, O\*d
+Stranger,tran*r
+Test,T*
+Test,*
+Te*t,e\*t
+Test string,T*string
+Test,**
+T,******
