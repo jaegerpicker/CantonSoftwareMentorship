@@ -1,5 +1,13 @@
 import sys
 
+
+def strOnlyWildCard(s):
+    for i in range(len(s)):
+        if s[i] != '*':
+            return False
+    return True
+
+
 def strPosition(s, o):
     for i in range(len(o)):
         #print str(i) + ' ' + s + ' ' + o
@@ -18,7 +26,7 @@ for line in samples:
     #print line
     #split the sample line into an array
     data = line.split(',')
-    searchStr = data[1].replace('\n','')
+    searchStr = data[1].replace('\n', '')
     searchee = data[0]
     charsSearchee = searchee.split()
     match = True
@@ -37,9 +45,12 @@ for line in samples:
         previousChar = nextMatching = searchStr[pos-1:pos]
         if previousChar == '\\':
             pos = 0
+        if strOnlyWildCard(searchStr):
+            match = True
+            pos = 0
         #print pos
         if pos > 0:
-            if pos == len(searchStr) -1:
+            if pos == len(searchStr) - 1:
                 match = True
                 break
             nextMatching = searchStr[pos+1:pos+2]
@@ -57,7 +68,6 @@ for line in samples:
                 break
             else:
                 match = False
-
 
     if match:
         print 'true'
