@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6855076260B5C1CAA2AD50BF"
+               BuildableName = "StringSeach"
+               BlueprintName = "StringSeach"
+               ReferencedContainer = "container:StringSeach.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "YES"
+      buildConfiguration = "Debug"
+      customWorkingDirectory = "/Users/shawn/Documents/CantonSoftwareMentorship/ShawnCampbell-Month1-ObjC-StringSearching">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6855076260B5C1CAA2AD50BF"
+            BuildableName = "StringSeach"
+            BlueprintName = "StringSeach"
+            ReferencedContainer = "container:StringSeach.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "../DavidEwing-Month1-PHP-StringSearching/StringSearching.txt"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
+   </LaunchAction>
+</Scheme>

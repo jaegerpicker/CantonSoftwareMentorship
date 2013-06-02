@@ -1,0 +1,2 @@
+C:\Users\Shawn Campbell\AppData\Local\Temporary Projects\StringSearching\bin\Debug\StringSearching.exe.config
+Z:\Documents\CantonSoftwareMentorship\ShawnCampbell-Month1-CSharp-StringSearching\StringSearching\StringSearching\bin\Debug\StringSearching.exe.config
