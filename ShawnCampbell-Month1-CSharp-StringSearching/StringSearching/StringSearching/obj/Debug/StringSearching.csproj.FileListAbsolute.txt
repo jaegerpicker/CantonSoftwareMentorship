@@ -1,2 +1,7 @@
 C:\Users\Shawn Campbell\AppData\Local\Temporary Projects\StringSearching\bin\Debug\StringSearching.exe.config
 Z:\Documents\CantonSoftwareMentorship\ShawnCampbell-Month1-CSharp-StringSearching\StringSearching\StringSearching\bin\Debug\StringSearching.exe.config
+Z:\Documents\CantonSoftwareMentorship\ShawnCampbell-Month1-CSharp-StringSearching\StringSearching\StringSearching\bin\Debug\StringSearching.exe
+Z:\Documents\CantonSoftwareMentorship\ShawnCampbell-Month1-CSharp-StringSearching\StringSearching\StringSearching\bin\Debug\StringSearching.pdb
+Z:\Documents\CantonSoftwareMentorship\ShawnCampbell-Month1-CSharp-StringSearching\StringSearching\StringSearching\obj\Debug\StringSearching.csprojResolveAssemblyReference.cache
+Z:\Documents\CantonSoftwareMentorship\ShawnCampbell-Month1-CSharp-StringSearching\StringSearching\StringSearching\obj\Debug\StringSearching.exe
+Z:\Documents\CantonSoftwareMentorship\ShawnCampbell-Month1-CSharp-StringSearching\StringSearching\StringSearching\obj\Debug\StringSearching.pdb
