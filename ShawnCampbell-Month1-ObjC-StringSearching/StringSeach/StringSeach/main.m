@@ -20,7 +20,7 @@ NSMutableArray * get_char_arr(NSString *s) {
 bool contains_wildcard(NSString *s) {
     NSMutableArray *sa = get_char_arr(s);
     for(int j = 0; j < [sa count]; j++) {
-        if([sa[j] rangeOfString:@"*"].location != NSNotFound) {
+        if([sa[j] rangeOfString:@"*"].location != NSNotFound && [sa[j] rangeOfString:@"\\*"].location == NSNotFound) {
             return TRUE;
         }
     }
@@ -35,6 +35,19 @@ bool is_only_wildcards(NSString *s) {
         }
     }
     return TRUE;
+}
+
+int find_first_non_wildcard(NSString *s) {
+    NSMutableArray *sa = get_char_arr(s);
+    for(int ii = 0; ii < [sa count]; ii++) {
+        if([sa[ii] rangeOfString:@"*"].location == NSNotFound) {
+            return ii;
+        }
+    }
+    return -1;
+}
+int find_first_wildcard(NSString *s) {
+    return [s rangeOfString:@"*"].location;
 }
 
 int main(int argc, const char * argv[])
@@ -63,6 +76,13 @@ int main(int argc, const char * argv[])
                     NSLog(@"false");
                     break;
                 }
+                //NSLog(@"%i", [[strSearch substringFromIndex:i] length]);
+                //NSLog(@"%i", [searchee length]);
+                //NSLog(@"%@", contains_wildcard(searchee));
+                if([[strSearch substringFromIndex:i] length] < [searchee length]) {
+                    NSLog(@"false");
+                    break;
+                }
                 NSString *searchSub = [[strSearch substringFromIndex:i] substringToIndex:[searchee length]];
                 if(strSearch == searchee) {
                     NSLog(@"true");
@@ -75,12 +95,36 @@ int main(int argc, const char * argv[])
                     break;
                 }
                 if(contains_wildcard(searchee)) {
-                    NSLog(searchee);
+                    //NSLog(searchee);
                     if(is_only_wildcards(searchee)) {
                         NSLog(@"true");
                         break;
                     }
-
+                    int wildcard_end = find_first_non_wildcard(searchee);
+                    if(wildcard_end != -1) {
+                        NSString *first_char_after_wildcard = [searchee substringWithRange:NSMakeRange(wildcard_end, 1)];
+                        int strSearch_first_char_location = [strSearch rangeOfString:first_char_after_wildcard].location;
+                        int first_wildcard = find_first_wildcard(searchee);
+                        NSString *prefix_searchee = [searchee substringToIndex:first_wildcard - 1];
+                        NSString *prefix_strSearch = [strSearch substringToIndex:[prefix_searchee length]];
+                        NSString *suffix_searchee = [searchee substringFromIndex:wildcard_end];
+                        NSString *suffix_strSearch = [strSearch substringFromIndex:[suffix_searchee length]];
+                        if([prefix_strSearch rangeOfString:prefix_searchee].location != 0 && [suffix_strSearch rangeOfString:suffix_searchee].location != 0) {
+                            NSLog(@"true");
+                            break;
+                        } else {
+                            NSLog(@"false");
+                            break;
+                        }
+                    } else {
+                        if([strSearch rangeOfString:[searchee substringToIndex:find_first_wildcard(searchee)]].location != NSNotFound) {
+                            NSLog(@"true");
+                            break;
+                        } else {
+                            NSLog(@"false");
+                            break;
+                       }
+                    }
                 }
                 //NSLog(@"searchStrLength left: %i", ([strSearch length] - i));
                 //NSLog(@"searcheeLength: %i", [searchee length]);
