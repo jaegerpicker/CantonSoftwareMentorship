@@ -21,6 +21,6 @@ foreach my $case (@cases) {
     next if $case =~ m/^#/;
     next if !$case;
     my ($expression, $result) = split(/=/, $case);
-    is($result = $pec->evaluate($expression), $result, "$expression = $result");
+    is($pec->evaluate($expression), $result, "$expression = $result");
 }
 
