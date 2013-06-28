@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSMutableArray+Stack.h"
 
 int main(int argc, const char * argv[])
 {
@@ -26,7 +27,42 @@ int main(int argc, const char * argv[])
             }
             NSArray *parts = [[NSArray alloc] init];
             parts = [s componentsSeparatedByString:@" "];
-            
+            double total_value = 0.0;
+            NSMutableArray *val = [[NSMutableArray alloc] init];
+            NSString *op = @"";
+            for(NSInteger i = [parts count]; i > 0; i--) {
+                NSString *cur = parts[i - 1];
+                NSScanner *sc = [NSScanner scannerWithString:cur];
+                double d;
+                BOOL isDouble = [sc scanDouble:&d];
+                if(isDouble) {
+                    [val push:[NSNumber numberWithDouble: d]];
+                } else if([cur isEqualToString:@" "]) {
+                    continue;
+                } else {
+                    op = cur;
+                    id idVar; 
+                    double val1 = 0.0;
+                    if([val count] > 0) {
+                        idVar = [val pop];
+                        while(idVar != Nil) {
+                            val1 = [idVar doubleValue];
+                            if([op isEqualToString:@"*"]) {
+                                total_value = val1 * total_value;
+                            } else if([op isEqualToString:@"+"]) {
+                                total_value += val1;
+                            } else if([op isEqualToString:@"-"]) {
+                                total_value -= val1;
+                            } else {
+                                total_value = total_value / val1;
+                            }
+                            idVar = [val pop];
+                        }
+                    }
+                    
+                }
+            }
+            NSLog(@"%@", total_value);
             NSLog(@"%@", s);
         }
         

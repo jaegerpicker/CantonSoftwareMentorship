@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2952A9E7177D26260052C231 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 2952A9E6177D26260052C231 /* NSMutableArray+Stack.m */; };
 		29BFAB6B1761763A00414C52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BFAB6A1761763A00414C52 /* Foundation.framework */; };
 		29BFAB6E1761763A00414C52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BFAB6D1761763A00414C52 /* main.m */; };
 		29BFAB721761763A00414C52 /* prefix.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 29BFAB711761763A00414C52 /* prefix.1 */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2952A9E5177D26260052C231 /* NSMutableArray+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Stack.h"; sourceTree = "<group>"; };
+		2952A9E6177D26260052C231 /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Stack.m"; sourceTree = "<group>"; };
 		29BFAB671761763A00414C52 /* prefix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = prefix; sourceTree = BUILT_PRODUCTS_DIR; };
 		29BFAB6A1761763A00414C52 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		29BFAB6D1761763A00414C52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 				29BFAB6D1761763A00414C52 /* main.m */,
 				29BFAB711761763A00414C52 /* prefix.1 */,
 				29BFAB6F1761763A00414C52 /* Supporting Files */,
+				2952A9E5177D26260052C231 /* NSMutableArray+Stack.h */,
+				2952A9E6177D26260052C231 /* NSMutableArray+Stack.m */,
 			);
 			path = prefix;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2952A9E7177D26260052C231 /* NSMutableArray+Stack.m in Sources */,
 				29BFAB6E1761763A00414C52 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
