@@ -10,6 +10,20 @@ def do_math(op, val1, val2):
     if op == '+':
         return val1 + val2
 
+def ignore_exception(IgnoreException=Exception,DefaultVal=None):
+    """ Decorator for ignoring exception from a function
+    e.g.   @ignore_exception(DivideByZero)
+    e.g.2. ignore_exception(DivideByZero)(Divide)(2/0)
+    """
+    def dec(function):
+        def _dec(*args, **kwargs):
+            try:
+                return function(*args, **kwargs)
+            except IgnoreException:
+                return DefaultVal
+        return _dec
+    return dec
+
 test_cases = open(sys.argv[1], 'r')
 for test in test_cases:
     if test != "":
@@ -19,7 +33,7 @@ for test in test_cases:
         val = 0
         for m in math_info:
             if m != ' ':
-                if int(m):
+                if ignore_exception(IgnoreException=ValueError) int(m):
                     num_list.append(m)
                 else:
                     op_list.append(m)
