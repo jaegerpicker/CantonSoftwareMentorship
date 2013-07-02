@@ -1,7 +1,0 @@
-C:\Development\MvcMusicStore\PrefixEvaluator\PrefixEvaluator\bin\Debug\PrefixEvaluator.exe
-C:\Development\MvcMusicStore\PrefixEvaluator\PrefixEvaluator\obj\x86\Debug\PrefixEvaluator.Properties.Resources.resources
-C:\Development\MvcMusicStore\PrefixEvaluator\PrefixEvaluator\obj\x86\Debug\PrefixEvaluator.csproj.GenerateResource.Cache
-C:\Development\MvcMusicStore\PrefixEvaluator\PrefixEvaluator\obj\x86\Debug\PrefixEvaluator.exe
-C:\Development\MvcMusicStore\PrefixEvaluator\PrefixEvaluator\obj\x86\Debug\PrefixEvaluator.pdb
-C:\Development\MvcMusicStore\PrefixEvaluator\PrefixEvaluator\bin\Debug\PrefixEvaluator.pdb
-C:\Development\MvcMusicStore\PrefixEvaluator\PrefixEvaluator\obj\x86\Debug\PrefixEvaluator.PrefixEvaluator.resources
