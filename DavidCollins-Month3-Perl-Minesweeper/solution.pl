@@ -9,57 +9,76 @@ while(my $line = <INFILE>) {
     next if($line =~ m/^s$/); # skip blank lines
     chomp $line;
     my $board = createBoard($line);
-    printBoard($board); 
+    solve($board);
 }
 
 close(INFILE);
 
-sub printBoard {
+sub solve {
     my $board = shift;
     my $rows = scalar(@$board);
     my $columns = scalar @{$$board[0]};
-    for (my $i = 0; $i < $rows; $i++) {
-        for (my $j = 0; $j < $columns; $j++) {
-            print $$board[$i][$j] . " ";
+
+    for (my $row = 0; $row < $rows; $row++) {
+        for (my $column = 0; $column < $columns; $column++) {
+
+            # skip mines
+            if ($$board[$row][$column] eq '*') {
+                print "*";
+                next;
+            }
+
+            my $result = inspectSquare($board, $row, $column);
+            print $result;
         }
-
-        print "\n";
-
     }
+    print "\n";
+}
+
+sub inspectSquare {
+    my ($board, $row, $column) = @_;
+    my $rows = scalar(@$board);
+    my $columns = scalar @{$$board[0]};
+
+    # create an array of coordinates to inspect
+    my @coords;
+   
+    # push every possible coordinate on
+    push(@coords, [$row - 1, $column - 1]); # top-left
+    push(@coords, [$row - 1, $column]); #top
+    push(@coords, [$row - 1, $column + 1]); # top-right
+    push(@coords, [$row, $column + 1]); # right
+    push(@coords, [$row + 1, $column + 1]); # bottom-right
+    push(@coords, [$row + 1, $column]); # bottom
+    push(@coords, [$row + 1, $column - 1]); # bottom-left
+    push(@coords, [$row, $column - 1]); # left
+
+    # get a count of the mines in the surrounding squares
+    my $mine_count = 0;
+    foreach my $coord (@coords) {
+        # filter out edge cases here
+        next if $$coord[0] < 0 || $$coord[0] == $rows;
+        next if $$coord[1] < 0 || $$coord[1] == $columns;
+        $mine_count++ if $$board[ $$coord[0] ][ $$coord[1] ] eq '*';
+    }
+
+    return $mine_count;
 }
 
 sub createBoard {
     my $line = shift;
     my ($dimensions, $board_string) = split(';', $line);
-    my ($row, $column) = split(',', $dimensions);
+    my ($rows, $columns) = split(',', $dimensions);
     my @board = split('', $board_string);
     my $grid = [];
- 
+
     # read line into a 2D array
-    for (my $i = 0; $i < $row; $i++) {
-        for (my $j = 0; $j < $column; $j++) {
-            $$grid[$i][$j] = shift @board; # next character
+    for (my $row = 0; $row < $rows; $row++) {
+        for (my $column = 0; $column < $columns; $column++) {
+            $$grid[$row][$column] = shift @board; # next character
         }
     }
 
     return $grid;
 }
-
-
-
-__END__
-
-Challenge:
-https://www.codeeval.com/browse/79/
-
-You will be given an M*N (M = row, N = column) matrix. Each item in this matrix is either a '*' or a '.'. A '*' indicates a mine whereas a '.' does not. The objective of the challenge is to output a M*N matrix where each element contains a number (except the positions which actually contain a mine which will remain as '*') which indicates the number of mines adjacent to it. Notice that each position has at most 8 adjacent positions e.g. left, top left, top, top right, right, ...
-
-Input sample:
-3,5;**.........*...
-4,4;*........*......
-
-
-Output sample:
-**100332001*100
-*10022101*101110
 
