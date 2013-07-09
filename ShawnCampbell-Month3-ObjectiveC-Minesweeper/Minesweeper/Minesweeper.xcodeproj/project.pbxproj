@@ -15,6 +15,8 @@
 		29D96DD517852A000097D19C /* Minesweeper_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D96DD417852A000097D19C /* Minesweeper_Tests.m */; };
 		29D96DDE17852DF10097D19C /* MineSweeperMatrixParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D96DDD17852DF10097D19C /* MineSweeperMatrixParser.m */; };
 		29D96DDF17852DF10097D19C /* MineSweeperMatrixParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D96DDD17852DF10097D19C /* MineSweeperMatrixParser.m */; };
+		29F3C1F5178CC7FC006B7328 /* MineSweeperField.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F3C1F4178CC7FC006B7328 /* MineSweeperField.m */; };
+		29F3C1F6178CC7FC006B7328 /* MineSweeperField.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F3C1F4178CC7FC006B7328 /* MineSweeperField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		29D96DDC17852DF10097D19C /* MineSweeperMatrixParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSweeperMatrixParser.h; sourceTree = "<group>"; };
 		29D96DDD17852DF10097D19C /* MineSweeperMatrixParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSweeperMatrixParser.m; sourceTree = "<group>"; };
 		29D96DE017852E1E0097D19C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		29F3C1F3178CC7FC006B7328 /* MineSweeperField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSweeperField.h; sourceTree = "<group>"; };
+		29F3C1F4178CC7FC006B7328 /* MineSweeperField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSweeperField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 		29D96DAD1785295A0097D19C = {
 			isa = PBXGroup;
 			children = (
+				29F3C1F3178CC7FC006B7328 /* MineSweeperField.h */,
+				29F3C1F4178CC7FC006B7328 /* MineSweeperField.m */,
 				29D96DBB1785295B0097D19C /* Minesweeper */,
 				29D96DCE17852A000097D19C /* Minesweeper Tests */,
 				29D96DB81785295A0097D19C /* Frameworks */,
@@ -231,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F3C1F5178CC7FC006B7328 /* MineSweeperField.m in Sources */,
 				29D96DDE17852DF10097D19C /* MineSweeperMatrixParser.m in Sources */,
 				29D96DBD1785295B0097D19C /* main.m in Sources */,
 			);
@@ -240,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F3C1F6178CC7FC006B7328 /* MineSweeperField.m in Sources */,
 				29D96DDF17852DF10097D19C /* MineSweeperMatrixParser.m in Sources */,
 				29D96DD517852A000097D19C /* Minesweeper_Tests.m in Sources */,
 			);
@@ -408,6 +416,7 @@
 				29D96DC61785295B0097D19C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29D96DD917852A000097D19C /* Build configuration list for PBXNativeTarget "Minesweeper Tests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +425,7 @@
 				29D96DDB17852A000097D19C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

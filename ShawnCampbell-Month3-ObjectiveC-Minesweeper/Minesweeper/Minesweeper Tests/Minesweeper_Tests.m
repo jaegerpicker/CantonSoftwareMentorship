@@ -65,4 +65,9 @@
     XCTAssertNotNil(_msmp.matrix, @"msmp matrix is nil");
 }
 
+- (void)testMindSweeperMineField
+{
+    
+}
+
 @end
