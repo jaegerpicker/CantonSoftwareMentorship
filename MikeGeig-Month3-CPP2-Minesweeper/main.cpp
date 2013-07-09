@@ -42,22 +42,22 @@ int main(int argc, char* argv[])
 			continue;
 		}
 
-		int x = i % c;
-		int y = i / c;
-
-		for (int x2 = -1; x2 <= 1; x2++) {
-			for (int y2 = -1; y2 <= 1; y2++) {
-
-				if (x2 == 0 && y2 == 0) continue;
-				if (x + x2 < 0)			continue;
-				if (y + y2 < 0)			continue;
-				if (x + x2 >= c)		continue;
-				if (y + y2 >= r)		continue;
-
-				if (field[c * (y + y2) + (x + x2)] == '*')
-					adjacentMines++;
-			}
-		}
+		if (field[i - c - 1] == '*')
+			adjacentMines++;
+		if (field[i - c] == '*')
+			adjacentMines++;
+		if (field[i - c + 1] == '*')
+			adjacentMines++;
+		if (field[i - 1] == '*')
+			adjacentMines++;
+		if (field[i + 1] == '*')
+			adjacentMines++;
+		if (field[i + c - 1] == '*')
+			adjacentMines++;
+		if (field[i + c] == '*')
+			adjacentMines++;
+		if (field[i + c + 1] == '*')
+			adjacentMines++;
 
 		output += adjacentMines + 48;
 	}
