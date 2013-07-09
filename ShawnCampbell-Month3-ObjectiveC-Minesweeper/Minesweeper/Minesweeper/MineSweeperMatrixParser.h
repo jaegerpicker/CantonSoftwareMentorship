@@ -10,5 +10,6 @@
 #import <Accelerate/Accelerate.h>
 
 @interface MineSweeperMatrixParser : NSObject
+@property NSMutableArray* matrix;
 - (BOOL)parseInput:NSString;
 @end

@@ -10,8 +10,25 @@
 
 
 @implementation MineSweeperMatrixParser
--(BOOL) parseInput:(id)NSString
+@synthesize matrix;
+-(id)init
 {
+    self = [super init];
+    matrix = [[NSMutableArray alloc] init];
+    return self;
+}
+
+-(BOOL) parseInput:(NSString*)line
+{
+    NSArray* mainComponents = [line componentsSeparatedByString:@";"];
+    NSArray* sizes = [mainComponents[0] componentsSeparatedByString:@","];
+    for(int i = 0; i < [sizes[0] intValue]; i++) {
+        NSRange downOnTheRange;
+        downOnTheRange.location = (i * [sizes[1] intValue]);
+        downOnTheRange.length = [sizes[1] intValue];
+        [matrix addObject:[mainComponents[1] substringWithRange:downOnTheRange]];
+    }
+    //NSLog(@"%@", matrix);
     return TRUE;
 }
 @end

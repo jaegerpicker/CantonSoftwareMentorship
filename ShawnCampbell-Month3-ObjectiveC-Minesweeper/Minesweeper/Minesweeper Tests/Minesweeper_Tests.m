@@ -37,13 +37,32 @@
 {
     NSString* line = @"3,5;**.........*...";
     BOOL ret = [_msmp parseInput:line];
-    //NSLog(@"%@", ret);
     XCTAssertTrue(ret, @"parseInput returned false");
+}
+
+- (void)testMineSweeperParserParseInputStringMatrixValid
+{
+    NSString * line = @"3,5;**.........*...";
+    BOOL ret = [_msmp parseInput:line];
+    XCTAssertTrue(ret, @"parseInput returned false");
+    NSUInteger arrCount = [_msmp.matrix count];
+    XCTAssertTrue(arrCount == 3, @"arrCount does not have 3 elements %lu", (unsigned long)arrCount);
+}
+
+-(void)testMineSweeperParserParseInputStringMatrixElementsValid
+{
+    NSString * line = @"3,5;**.........*...";
+    BOOL ret = [_msmp parseInput:line];
+    XCTAssertTrue(ret, @"parseInput returned false");
+    NSUInteger arrCount = [_msmp.matrix count];
+    for(int i = 0; i < arrCount; i++) {
+        XCTAssertTrue([_msmp.matrix[i] length] == 5, @"element %@ has length %lu not 5", _msmp.matrix[i], (unsigned long)[_msmp.matrix[i] length]);
+    }
 }
 
 - (void)testMineSweeperParserMatrix
 {
-    
+    XCTAssertNotNil(_msmp.matrix, @"msmp matrix is nil");
 }
 
 @end
