@@ -17,6 +17,8 @@
 		29D96DDF17852DF10097D19C /* MineSweeperMatrixParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D96DDD17852DF10097D19C /* MineSweeperMatrixParser.m */; };
 		29F3C1F5178CC7FC006B7328 /* MineSweeperField.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F3C1F4178CC7FC006B7328 /* MineSweeperField.m */; };
 		29F3C1F6178CC7FC006B7328 /* MineSweeperField.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F3C1F4178CC7FC006B7328 /* MineSweeperField.m */; };
+		29F3C1F9178CF37B006B7328 /* MineSweeperElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F3C1F8178CF37B006B7328 /* MineSweeperElement.m */; };
+		29F3C1FA178CF37B006B7328 /* MineSweeperElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F3C1F8178CF37B006B7328 /* MineSweeperElement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		29D96DE017852E1E0097D19C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		29F3C1F3178CC7FC006B7328 /* MineSweeperField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSweeperField.h; sourceTree = "<group>"; };
 		29F3C1F4178CC7FC006B7328 /* MineSweeperField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSweeperField.m; sourceTree = "<group>"; };
+		29F3C1F7178CF37B006B7328 /* MineSweeperElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSweeperElement.h; sourceTree = "<group>"; };
+		29F3C1F8178CF37B006B7328 /* MineSweeperElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSweeperElement.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 		29D96DAD1785295A0097D19C = {
 			isa = PBXGroup;
 			children = (
+				29F3C1F7178CF37B006B7328 /* MineSweeperElement.h */,
+				29F3C1F8178CF37B006B7328 /* MineSweeperElement.m */,
 				29F3C1F3178CC7FC006B7328 /* MineSweeperField.h */,
 				29F3C1F4178CC7FC006B7328 /* MineSweeperField.m */,
 				29D96DBB1785295B0097D19C /* Minesweeper */,
@@ -238,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29F3C1F5178CC7FC006B7328 /* MineSweeperField.m in Sources */,
+				29F3C1F9178CF37B006B7328 /* MineSweeperElement.m in Sources */,
 				29D96DDE17852DF10097D19C /* MineSweeperMatrixParser.m in Sources */,
 				29D96DBD1785295B0097D19C /* main.m in Sources */,
 			);
@@ -248,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29F3C1F6178CC7FC006B7328 /* MineSweeperField.m in Sources */,
+				29F3C1FA178CF37B006B7328 /* MineSweeperElement.m in Sources */,
 				29D96DDF17852DF10097D19C /* MineSweeperMatrixParser.m in Sources */,
 				29D96DD517852A000097D19C /* Minesweeper_Tests.m in Sources */,
 			);

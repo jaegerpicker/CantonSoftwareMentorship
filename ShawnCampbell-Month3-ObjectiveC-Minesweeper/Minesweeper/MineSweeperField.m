@@ -9,5 +9,22 @@
 #import "MineSweeperField.h"
 
 @implementation MineSweeperField
+@synthesize field;
+@synthesize height;
+@synthesize width;
+@synthesize numberOfMines;
+
+-(id)init:(NSMutableArray*)matrix
+{
+    self = [super init];
+    self.field = matrix;
+    return self;
+}
+
+-(NSArray*)findNeighbors
+{
+    NSArray* ret;
+    return ret;
+}
 
 @end

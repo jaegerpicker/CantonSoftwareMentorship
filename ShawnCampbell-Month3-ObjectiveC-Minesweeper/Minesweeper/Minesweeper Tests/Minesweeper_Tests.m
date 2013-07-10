@@ -8,9 +8,11 @@
 
 #import <XCTest/XCTest.h>
 #import "MineSweeperMatrixParser.h"
+#import "MineSweeperField.h"
 
 @interface Minesweeper_Tests : XCTestCase
 @property MineSweeperMatrixParser* msmp;
+@property MineSweeperField* msf;
 @end
 
 @implementation Minesweeper_Tests
@@ -19,6 +21,7 @@
 {
     [super setUp];
     _msmp = [[MineSweeperMatrixParser alloc] init];
+    _msf = [[MineSweeperField alloc] init];
 }
 
 - (void)tearDown
@@ -67,6 +70,13 @@
 
 - (void)testMindSweeperMineField
 {
+    XCTAssertNotNil(_msf, @"The Mine Sweeper Field is nil");
+}
+
+- (void)testMineSweeperMineFieldfindNeighbors
+{
+    NSArray* ret = [_msf findNeighbors];
+    XCTAssertNotNil(ret, @"Find neighbors returned nil");
     
 }
 
