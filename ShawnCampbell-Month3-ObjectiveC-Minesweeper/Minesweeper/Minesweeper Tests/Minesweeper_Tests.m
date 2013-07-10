@@ -21,7 +21,9 @@
 {
     [super setUp];
     _msmp = [[MineSweeperMatrixParser alloc] init];
-    _msf = [[MineSweeperField alloc] init];
+    NSString* line = @"3,5;**.........*...";
+    BOOL ret = [_msmp parseInput:line];
+    _msf = [[MineSweeperField alloc] init:_msmp.matrix];
 }
 
 - (void)tearDown
@@ -78,6 +80,17 @@
     NSArray* ret = [_msf findNeighbors];
     XCTAssertNotNil(ret, @"Find neighbors returned nil");
     
+}
+
+- (void)testMineSweeperMineFieldElementsNotNil
+{
+    XCTAssertNotNil(_msf.elements, @"Elements was nil");
+}
+
+- (void)testMineSweeperMineFieldElementsCount
+{
+    NSInteger totNumElements = _msf.width * _msf.height;
+    XCTAssertTrue([_msf.elements count] == totNumElements, @"Elements count did not equal the total number of elements %lu %ld", (unsigned long)[_msf.elements count], (long)totNumElements);
 }
 
 @end

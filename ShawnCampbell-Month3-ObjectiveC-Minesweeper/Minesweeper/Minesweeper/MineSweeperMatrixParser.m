@@ -20,6 +20,7 @@
 
 -(BOOL) parseInput:(NSString*)line
 {
+    [matrix removeAllObjects];
     NSArray* mainComponents = [line componentsSeparatedByString:@";"];
     NSArray* sizes = [mainComponents[0] componentsSeparatedByString:@","];
     for(int i = 0; i < [sizes[0] intValue]; i++) {

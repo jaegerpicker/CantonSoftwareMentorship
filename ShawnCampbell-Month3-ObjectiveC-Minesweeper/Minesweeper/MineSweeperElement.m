@@ -9,5 +9,9 @@
 #import "MineSweeperElement.h"
 
 @implementation MineSweeperElement
+@synthesize x;
+@synthesize y;
+@synthesize type;
+@synthesize value;
 
 @end

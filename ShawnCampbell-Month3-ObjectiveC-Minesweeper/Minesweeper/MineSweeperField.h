@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MineSweeperElement.h"
 
 @interface MineSweeperField : NSObject
 @property NSInteger height;
@@ -14,7 +15,8 @@
 @property NSInteger numberOfMines;
 @property NSMutableArray *field;
 @property NSString *ouput;
-
+@property NSMutableDictionary *elements;
+-(id)init:(NSMutableArray*)matrix;
 -(NSArray*)findNeighbors;
 -(NSString*)getElement;
 -(NSString*)solve;
