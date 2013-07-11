@@ -67,6 +67,12 @@
             ReferencedContainer = "container:Minesweeper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "/Users/shawn/Documents/CantonSoftwareMentorship/ShawnCampbell-Month3-ObjectiveC-Minesweeper/Minesweeper/input.txt"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
