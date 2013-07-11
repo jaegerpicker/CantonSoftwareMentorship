@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Minesweeper Tests/Minesweeper_Tests.m"
-            timestampString = "395116495.031551"
+            timestampString = "395195823.223411"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "-testMineSweeperParserParseInputString"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MineSweeperField.m"
-            timestampString = "395120635.612307"
+            timestampString = "395195709.720086"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "-init:"
             landmarkType = "5">
          </BreakpointContent>
@@ -80,6 +80,206 @@
             startingLineNumber = "22"
             endingLineNumber = "22"
             landmarkName = "-setUp"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Minesweeper Tests/Minesweeper_Tests.m"
+            timestampString = "395196504.463101"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "-testMineSweeperMineFieldfindNeighbors"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Minesweeper_Tests testMineSweeperMineFieldfindNeighbors]"
+                  moduleName = "Minesweeper Tests"
+                  urlString = "file:///Users/shawn/Documents/CantonSoftwareMentorship/ShawnCampbell-Month3-ObjectiveC-Minesweeper/Minesweeper/Minesweeper%20Tests/Minesweeper_Tests.m"
+                  timestampString = "395196869.383775"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "89">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Minesweeper_Tests testMineSweeperMineFieldfindNeighbors]"
+                  moduleName = "Minesweeper Tests"
+                  urlString = "file:///Users/shawn/Documents/CantonSoftwareMentorship/ShawnCampbell-Month3-ObjectiveC-Minesweeper/Minesweeper/Minesweeper%20Tests/Minesweeper_Tests.m"
+                  timestampString = "395196869.384051"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "888">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Minesweeper_Tests testMineSweeperMineFieldfindNeighbors]"
+                  moduleName = "Minesweeper Tests"
+                  urlString = "file:///Users/shawn/Documents/CantonSoftwareMentorship/ShawnCampbell-Month3-ObjectiveC-Minesweeper/Minesweeper/Minesweeper%20Tests/Minesweeper_Tests.m"
+                  timestampString = "395196869.384347"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "1919">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MineSweeperField.m"
+            timestampString = "395196650.608558"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "-findNeighbors:yCoord:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MineSweeperField findNeighbors:yCoord:]"
+                  moduleName = "Minesweeper Tests"
+                  urlString = "file:///Users/shawn/Documents/CantonSoftwareMentorship/ShawnCampbell-Month3-ObjectiveC-Minesweeper/Minesweeper/MineSweeperField.m"
+                  timestampString = "395197106.234881"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "111">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MineSweeperField findNeighbors:yCoord:]"
+                  moduleName = "Minesweeper Tests"
+                  urlString = "file:///Users/shawn/Documents/CantonSoftwareMentorship/ShawnCampbell-Month3-ObjectiveC-Minesweeper/Minesweeper/MineSweeperField.m"
+                  timestampString = "395197106.235125"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "331">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MineSweeperField.m"
+            timestampString = "395197223.016454"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-findNeighbors:yCoord:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MineSweeperField.m"
+            timestampString = "395200323.921338"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "-solve"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MineSweeperField.m"
+            timestampString = "395200323.921338"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "-solve"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MineSweeperField solve]"
+                  moduleName = "Minesweeper Tests"
+                  urlString = "file:///Users/shawn/Documents/CantonSoftwareMentorship/ShawnCampbell-Month3-ObjectiveC-Minesweeper/Minesweeper/MineSweeperField.m"
+                  timestampString = "395198638.16735"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "1513">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MineSweeperField solve]"
+                  moduleName = "Minesweeper Tests"
+                  urlString = "file:///Users/shawn/Documents/CantonSoftwareMentorship/ShawnCampbell-Month3-ObjectiveC-Minesweeper/Minesweeper/MineSweeperField.m"
+                  timestampString = "395198638.168072"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "1659">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Minesweeper Tests/Minesweeper_Tests.m"
+            timestampString = "395198294.796283"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "-testMineSweeperMineFieldSolve"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

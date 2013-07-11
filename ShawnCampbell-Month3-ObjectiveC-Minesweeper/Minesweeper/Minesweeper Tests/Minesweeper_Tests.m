@@ -23,7 +23,9 @@
     _msmp = [[MineSweeperMatrixParser alloc] init];
     NSString* line = @"3,5;**.........*...";
     BOOL ret = [_msmp parseInput:line];
-    _msf = [[MineSweeperField alloc] init:_msmp.matrix];
+    if(ret){
+        _msf = [[MineSweeperField alloc] init:_msmp.matrix];
+    }
 }
 
 - (void)tearDown
@@ -77,9 +79,17 @@
 
 - (void)testMineSweeperMineFieldfindNeighbors
 {
-    NSArray* ret = [_msf findNeighbors];
+    NSArray* ret = [_msf findNeighbors:1 yCoord:2];
     XCTAssertNotNil(ret, @"Find neighbors returned nil");
-    
+    NSLog(@"%@", ret);
+    XCTAssertTrue([ret count] == 8, @"ret count equals %ld", [ret count]);
+}
+
+- (void)testMineSweeperMineFieldgetElement
+{
+    MineSweeperElement* el = _msf.elements[@"1,2"];
+    MineSweeperElement* testEl = [_msf getElement:1 yCoord:2];
+    XCTAssertTrue(el == testEl, @"The Mine Sweeper elements test differently");
 }
 
 - (void)testMineSweeperMineFieldElementsNotNil
@@ -91,6 +101,25 @@
 {
     NSInteger totNumElements = _msf.width * _msf.height;
     XCTAssertTrue([_msf.elements count] == totNumElements, @"Elements count did not equal the total number of elements %lu %ld", (unsigned long)[_msf.elements count], (long)totNumElements);
+}
+
+- (void)testMineSweeperMineFieldSolve
+{
+    NSString* solution = @"**100332001*100";
+    NSString* output = [_msf solve];
+    XCTAssertTrue([solution isEqual:output], @"Solutions did not match %@ :%@", solution, output);
+}
+
+- (void)testMineSweeperMineFieldSolve2ndExample
+{
+    MineSweeperMatrixParser *m = [[MineSweeperMatrixParser alloc] init];
+    NSString* line = @"4,4;*........*......";
+    BOOL ret = [m parseInput:line];
+    XCTAssertTrue(ret, @"m parseInput failed");
+    MineSweeperField* f = [[MineSweeperField alloc] init:m.matrix];
+    NSString* solution = @"*10022101*101110";
+    NSString* output = [f solve];
+    XCTAssertTrue([solution isEqual:output], @"Solution and output differ %@:%@", solution, output);
 }
 
 @end

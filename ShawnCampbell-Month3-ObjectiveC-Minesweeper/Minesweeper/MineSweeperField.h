@@ -17,8 +17,8 @@
 @property NSString *ouput;
 @property NSMutableDictionary *elements;
 -(id)init:(NSMutableArray*)matrix;
--(NSArray*)findNeighbors;
--(NSString*)getElement;
+-(NSArray*)findNeighbors:(NSInteger)x yCoord:(NSInteger)y;
+-(MineSweeperElement*)getElement:(NSInteger)x yCoord:(NSInteger)y;
 -(NSString*)solve;
 
 @end
