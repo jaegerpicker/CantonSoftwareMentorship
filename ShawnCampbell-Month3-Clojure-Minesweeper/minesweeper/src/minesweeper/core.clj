@@ -15,21 +15,16 @@
 
 (def parseMatrix (fn [mstring]
                    (let [this-tLine (tokenedLine mstring)
-                   		this-size (size (tokenedLine mstring))]
-                   (println (row 
-                   		(drop 5 (take 
-                   			(- (count this-tLine) 4) 
-                   			this-tLine))
-                   		0
-                   		this-size
-                   	)
-                   )
+                   		this-size (size (tokenedLine mstring))
+                   		tLine-Count (count (tokenedLine mstring))]
+                   (println (row this-tLine 0 this-size))
                    ;(println this-size)
                    )
                    ))
 
 (def solve (fn [line]
-             (parseMatrix line)))
+             (let [matrix (parseMatrix line)]
+             	(println matrix))))
 
 (def -main (fn [] (with-open [rdr (io/reader
                   "/Users/shawn/Documents/CantonSoftwareMentorship/ShawnCampbell-Month3-Clojure-Minesweeper/minesweeper/src/minesweeper/input.txt")]
