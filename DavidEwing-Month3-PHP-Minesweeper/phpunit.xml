@@ -1,0 +1,17 @@
+<phpunit
+  colors="true"
+  strict="true"
+  verbose="true">
+  <testsuites>
+    <testsuite name="Test Suite">
+      <directory>./tests</directory>
+    </testsuite>
+  </testsuites>
+  <filter>
+    <whitelist processUncoveredFilesFromWhitelist="true">
+      <exclude>
+        <directory suffix=".php">./tests</directory>
+      </exclude>
+    </whitelist>
+  </filter>
+</phpunit>
