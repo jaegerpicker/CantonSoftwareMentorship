@@ -1,0 +1,4 @@
+C:\work\CantonSoftwareMentorship\RogerChaplin-Month3-C#-Minesweeper\Minesweeper\Minesweeper\bin\Release\Minesweeper.exe
+C:\work\CantonSoftwareMentorship\RogerChaplin-Month3-C#-Minesweeper\Minesweeper\Minesweeper\bin\Release\Minesweeper.pdb
+C:\work\CantonSoftwareMentorship\RogerChaplin-Month3-C#-Minesweeper\Minesweeper\Minesweeper\obj\x86\Release\Minesweeper.exe
+C:\work\CantonSoftwareMentorship\RogerChaplin-Month3-C#-Minesweeper\Minesweeper\Minesweeper\obj\x86\Release\Minesweeper.pdb
