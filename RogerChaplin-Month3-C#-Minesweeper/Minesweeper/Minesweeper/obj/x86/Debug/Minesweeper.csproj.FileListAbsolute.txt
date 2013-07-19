@@ -1,0 +1,9 @@
+C:\work\Minesweeper\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe
+C:\work\Minesweeper\Minesweeper\Minesweeper\bin\Debug\Minesweeper.pdb
+C:\work\Minesweeper\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.exe
+C:\work\Minesweeper\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.pdb
+C:\work\Minesweeper\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.csprojResolveAssemblyReference.cache
+C:\work\CantonSoftwareMentorship\RogerChaplin-Month3-C#-Minesweeper\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.exe
+C:\work\CantonSoftwareMentorship\RogerChaplin-Month3-C#-Minesweeper\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.pdb
+C:\work\CantonSoftwareMentorship\RogerChaplin-Month3-C#-Minesweeper\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe
+C:\work\CantonSoftwareMentorship\RogerChaplin-Month3-C#-Minesweeper\Minesweeper\Minesweeper\bin\Debug\Minesweeper.pdb
