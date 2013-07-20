@@ -1,4 +1,4 @@
-package minesweeper
+package main
 
 import (
 	"os"
@@ -6,19 +6,18 @@ import (
 	"bytes"
 	"io"
 	"fmt"
-	"strings"
 )
 
 func readLines(path string) (lines []string, err error) {
 	var (
-		file *os.file
+		file *os.File
 		part []byte
 		prefix bool
 		)
 	if file, err = os.Open(path); err != nil {
 		return
 	}
-	defer file.close()
+	defer file.Close()
 
 	reader := bufio.NewReader(file)
 	buffer := bytes.NewBuffer(make([]byte, 0))
@@ -40,13 +39,13 @@ func readLines(path string) (lines []string, err error) {
 
 
 func main() {
-	lines, err = readLines("input.txt")
+	lines, err := readLines("input.txt")
 	if err != nil {
 		fmt.Println("Error: %s\n", err)
 		return
 	}
-	for -, line := range lines {
+	for _, line := range lines {
 		fmt.Println(line)
 	}
-	
+
 }
