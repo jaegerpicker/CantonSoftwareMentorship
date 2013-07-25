@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "chat_server", "chat_server\chat_server.fsproj", "{651A9CC0-AD0F-44A6-A561-FF87D335A62B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{651A9CC0-AD0F-44A6-A561-FF87D335A62B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{651A9CC0-AD0F-44A6-A561-FF87D335A62B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{651A9CC0-AD0F-44A6-A561-FF87D335A62B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{651A9CC0-AD0F-44A6-A561-FF87D335A62B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
