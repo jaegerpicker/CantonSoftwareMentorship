@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'chat_server' target in the 'chat_server' project
-//
-
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-#endif
