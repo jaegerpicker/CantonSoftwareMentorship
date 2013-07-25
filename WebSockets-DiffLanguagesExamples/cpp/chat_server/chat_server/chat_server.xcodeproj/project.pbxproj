@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F4D3E39017A1669000CB4D56 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4D3E38F17A1669000CB4D56 /* main.cpp */; };
 		F4D3E39217A1669000CB4D56 /* chat_server.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F4D3E39117A1669000CB4D56 /* chat_server.1 */; };
+		F4D3E47517A1A94300CB4D56 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D3E47417A1A94300CB4D56 /* libwebsockets.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		F4D3E38C17A1669000CB4D56 /* chat_server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chat_server; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D3E38F17A1669000CB4D56 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F4D3E39117A1669000CB4D56 /* chat_server.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = chat_server.1; sourceTree = "<group>"; };
+		F4D3E47417A1A94300CB4D56 /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebsockets.a; path = ../../../../../libwebsockets/build/lib/libwebsockets.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4D3E47517A1A94300CB4D56 /* libwebsockets.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 		F4D3E38317A1669000CB4D56 = {
 			isa = PBXGroup;
 			children = (
+				F4D3E47417A1A94300CB4D56 /* libwebsockets.a */,
 				F4D3E38E17A1669000CB4D56 /* chat_server */,
 				F4D3E38D17A1669000CB4D56 /* Products */,
 			);
@@ -184,6 +188,10 @@
 		F4D3E39617A1669000CB4D56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../libwebsockets/build/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -191,6 +199,10 @@
 		F4D3E39717A1669000CB4D56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../libwebsockets/build/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

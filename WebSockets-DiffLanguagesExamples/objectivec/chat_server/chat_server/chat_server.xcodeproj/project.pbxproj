@@ -10,7 +10,53 @@
 		F4D3E3EF17A1699C00CB4D56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D3E3EE17A1699C00CB4D56 /* Foundation.framework */; };
 		F4D3E3F217A1699C00CB4D56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D3E3F117A1699C00CB4D56 /* main.m */; };
 		F4D3E3F617A1699C00CB4D56 /* chat_server.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F4D3E3F517A1699C00CB4D56 /* chat_server.1 */; };
+		F4D3E44917A1A38A00CB4D56 /* SocketRocket64Bit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D3E44617A1A38600CB4D56 /* SocketRocket64Bit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4D3E40317A19EA000CB4D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4D3E3FC17A19E9F00CB4D56 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B2082D1450F597009315AF;
+			remoteInfo = SocketRocket;
+		};
+		F4D3E40517A19EA000CB4D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4D3E3FC17A19E9F00CB4D56 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F668C880153E91210044DBAC;
+			remoteInfo = SocketRocketOSX;
+		};
+		F4D3E40717A19EA000CB4D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4D3E3FC17A19E9F00CB4D56 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6BDA802145900D200FE3253;
+			remoteInfo = SRWebSocketTests;
+		};
+		F4D3E40917A19EA000CB4D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4D3E3FC17A19E9F00CB4D56 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62417E314D52F3C003CE997;
+			remoteInfo = TestChat;
+		};
+		F4D3E44517A1A38600CB4D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4D3E3FC17A19E9F00CB4D56 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4D3E41117A1A23700CB4D56;
+			remoteInfo = SocketRocket64Bit;
+		};
+		F4D3E44717A1A38600CB4D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4D3E3FC17A19E9F00CB4D56 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4D3E42317A1A23800CB4D56;
+			remoteInfo = SocketRocket64BitTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F4D3E3E917A1699C00CB4D56 /* CopyFiles */ = {
@@ -31,6 +77,7 @@
 		F4D3E3F117A1699C00CB4D56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4D3E3F417A1699C00CB4D56 /* chat_server-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "chat_server-Prefix.pch"; sourceTree = "<group>"; };
 		F4D3E3F517A1699C00CB4D56 /* chat_server.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = chat_server.1; sourceTree = "<group>"; };
+		F4D3E3FC17A19E9F00CB4D56 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = ../../../../../SocketRocket/SocketRocket.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4D3E44917A1A38A00CB4D56 /* SocketRocket64Bit.framework in Frameworks */,
 				F4D3E3EF17A1699C00CB4D56 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +99,7 @@
 				F4D3E3F017A1699C00CB4D56 /* chat_server */,
 				F4D3E3ED17A1699C00CB4D56 /* Frameworks */,
 				F4D3E3EC17A1699C00CB4D56 /* Products */,
+				F4D3E3FC17A19E9F00CB4D56 /* SocketRocket.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +135,19 @@
 				F4D3E3F417A1699C00CB4D56 /* chat_server-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4D3E3FD17A19E9F00CB4D56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4D3E40417A19EA000CB4D56 /* libSocketRocket.a */,
+				F4D3E40617A19EA000CB4D56 /* SocketRocket.framework */,
+				F4D3E40817A19EA000CB4D56 /* SRWebSocketTests.octest */,
+				F4D3E40A17A19EA000CB4D56 /* TestChat.app */,
+				F4D3E44617A1A38600CB4D56 /* SocketRocket64Bit.framework */,
+				F4D3E44817A1A38600CB4D56 /* SocketRocket64BitTests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,12 +189,63 @@
 			mainGroup = F4D3E3E217A1699C00CB4D56;
 			productRefGroup = F4D3E3EC17A1699C00CB4D56 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F4D3E3FD17A19E9F00CB4D56 /* Products */;
+					ProjectRef = F4D3E3FC17A19E9F00CB4D56 /* SocketRocket.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F4D3E3EA17A1699C00CB4D56 /* chat_server */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F4D3E40417A19EA000CB4D56 /* libSocketRocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSocketRocket.a;
+			remoteRef = F4D3E40317A19EA000CB4D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4D3E40617A19EA000CB4D56 /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = F4D3E40517A19EA000CB4D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4D3E40817A19EA000CB4D56 /* SRWebSocketTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SRWebSocketTests.octest;
+			remoteRef = F4D3E40717A19EA000CB4D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4D3E40A17A19EA000CB4D56 /* TestChat.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestChat.app;
+			remoteRef = F4D3E40917A19EA000CB4D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4D3E44617A1A38600CB4D56 /* SocketRocket64Bit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket64Bit.framework;
+			remoteRef = F4D3E44517A1A38600CB4D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4D3E44817A1A38600CB4D56 /* SocketRocket64BitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SocketRocket64BitTests.octest;
+			remoteRef = F4D3E44717A1A38600CB4D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4D3E3E717A1699C00CB4D56 /* Sources */ = {

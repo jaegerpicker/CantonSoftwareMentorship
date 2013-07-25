@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <SocketRocket/SRSocketRocket.h>
+
 
 int main(int argc, const char * argv[])
 {
