@@ -42,8 +42,8 @@ func readLines(path string) (lines []string, err error) {
 func parseLine(line string) ([][]string) {
 	arr := strings.Split(line, "")
 	//err := nil
-	width, err := strconv.Atoi(arr[0])
-	height, err := strconv.Atoi(arr[2])
+	width, err := strconv.Atoi(arr[2])
+	height, err := strconv.Atoi(arr[0])
 	if err != nil  {
 		fmt.Println(err)
 	}
