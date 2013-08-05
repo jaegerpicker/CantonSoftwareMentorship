@@ -1,0 +1,14 @@
+C:\Users\10055\Desktop\Craftsman Code Challenge Matrix\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\10055\Desktop\Craftsman Code Challenge Matrix\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\10055\Desktop\Craftsman Code Challenge Matrix\UnitTestProject1\bin\Debug\ConsoleApplication1.exe
+C:\Users\10055\Desktop\Craftsman Code Challenge Matrix\UnitTestProject1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\10055\Desktop\Craftsman Code Challenge Matrix\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Users\10055\Desktop\Craftsman Code Challenge Matrix\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\10055\Desktop\Craftsman Code Challenge Matrix\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+C:\Users\10055\Documents\Visual Studio 2010\Projects\Code Craftsman\Craftsman Code Challenge Matrix\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\10055\Documents\Visual Studio 2010\Projects\Code Craftsman\Craftsman Code Challenge Matrix\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\10055\Documents\Visual Studio 2010\Projects\Code Craftsman\Craftsman Code Challenge Matrix\UnitTestProject1\bin\Debug\ConsoleApplication1.exe
+C:\Users\10055\Documents\Visual Studio 2010\Projects\Code Craftsman\Craftsman Code Challenge Matrix\UnitTestProject1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\10055\Documents\Visual Studio 2010\Projects\Code Craftsman\Craftsman Code Challenge Matrix\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Users\10055\Documents\Visual Studio 2010\Projects\Code Craftsman\Craftsman Code Challenge Matrix\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\10055\Documents\Visual Studio 2010\Projects\Code Craftsman\Craftsman Code Challenge Matrix\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
