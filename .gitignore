@@ -34,7 +34,7 @@ nosetests.xml
 .project
 .pydevproject
 
-# Webstrom Clutter
+# Webstorm Clutter
 */.idea/*
 
 # vim files
