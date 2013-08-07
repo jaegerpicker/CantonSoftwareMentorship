@@ -50,7 +50,7 @@
 		29D96DBC1785295B0097D19C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29D96DBF1785295B0097D19C /* Minesweeper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Minesweeper-Prefix.pch"; sourceTree = "<group>"; };
 		29D96DC01785295B0097D19C /* Minesweeper.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Minesweeper.1; sourceTree = "<group>"; };
-		29D96DCB17852A000097D19C /* Minesweeper Tests.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = "Minesweeper Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29D96DCB17852A000097D19C /* Minesweeper Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Minesweeper Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D96DCC17852A000097D19C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		29D96DD017852A000097D19C /* Minesweeper Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Minesweeper Tests-Info.plist"; sourceTree = "<group>"; };
 		29D96DD217852A000097D19C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
