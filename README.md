@@ -5,9 +5,13 @@ A public repo to allow checkin's of the Monthly Canton Software Craftsmanship gr
 programming challenges. 
 
 Monthly Challenge list:
+
 1. StringSearching - https://www.codeeval.com/open_challenges/28/
+
 2. Prefix Calculator - https://www.codeeval.com/open_challenges/7/
+
 3. MineSweeper - https://www.codeeval.com/open_challenges/79/
+
 4. RomanNumerals - https://www.codeeval.com/browse/106/ (for extra credit convert the resulting roman numeral back to int)
 
 Please see the README.md in each challenge folder for challenge descriptions.
