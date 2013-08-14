@@ -16,7 +16,7 @@ using namespace std;
 int write_test_file(string file_name) {
     ofstream test_file(file_name);
     if(test_file.is_open()) {
-        for(int i = 0; i < 10000000; i++) {
+        for(int i = 0; i < 1000000; i++) {
             test_file << rand() % 3999 + 1 << endl;
         }
         test_file.close();
@@ -40,6 +40,7 @@ int main(int argc, const char * argv[])
         string numerals [13] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
         string results = "";
         if (myfile.is_open()) {
+            int line_num = 0;
             while (myfile.good()) {
                 getline(myfile, line);
                 int number = atoi(line.c_str());
@@ -50,7 +51,8 @@ int main(int argc, const char * argv[])
                         results += numerals[i];
                     }
                 }
-                cout << results << endl;
+                cout << line_num << results << endl;
+                line_num++;
             }
             myfile.close();
         }
@@ -59,8 +61,8 @@ int main(int argc, const char * argv[])
             cout << "Unable to open file\n";
         }
         auto end = std::chrono::steady_clock::now();
-        auto elapsed = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
-        cout << "It took me " << elapsed.count() << " microseconds." << endl;
+        auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+        cout << "It took me " << elapsed.count() << " milliseconds." << endl;
     }
     return 0;
 }

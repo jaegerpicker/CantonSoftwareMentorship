@@ -1,4 +1,5 @@
-fs = require('fs');
+var fs = require('fs');
+var start = Date.now();
 fs.readFile(process.argv[2], 'utf8', function (err, data) {
 	if(err) {
 		return console.log(err);
@@ -22,4 +23,7 @@ fs.readFile(process.argv[2], 'utf8', function (err, data) {
 		}
 		console.log(results);
 	});
+	var end = Date.now()
+	var diff = end - start;
+	console.log("It took me " + diff + " milliseconds");
 });
