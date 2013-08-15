@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Diagnostics;
 
 
 namespace RomanNumeralsExamples
@@ -12,6 +13,8 @@ namespace RomanNumeralsExamples
     {
         static void Main(string[] args)
         {
+			Stopwatch timer = Stopwatch.StartNew();
+			int count = 0;
             using (StreamReader reader = File.OpenText(args[0]))
             {
                 while (!reader.EndOfStream)
@@ -25,13 +28,16 @@ namespace RomanNumeralsExamples
                     {
                         int number = int.Parse(line);
                         string res = NumberToRoman(number);
-                        System.Console.WriteLine(res);
-                        string iRes = RomanToNumber(res);
-                        System.Console.WriteLine(iRes);
+                        System.Console.WriteLine(count.ToString() + ": " + res);
+						count ++;
+                        //string iRes = RomanToNumber(res);
+                        //System.Console.WriteLine(iRes);
                     }
                     // do something with line
                 }
             }
+			timer.Stop();
+			System.Console.WriteLine ("It took me: " + timer.ElapsedMilliseconds.ToString () + " milliseconds");
         }
 
         static public String RomanToNumber(String numerals)
