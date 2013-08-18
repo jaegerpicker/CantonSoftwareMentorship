@@ -25,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		291A91E117C0799F0085F677 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		299EF98B17BC76E600D13434 /* RomanNumerals */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RomanNumerals; sourceTree = BUILT_PRODUCTS_DIR; };
 		299EF98E17BC76E600D13434 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		299EF99017BC76E600D13434 /* RomanNumerals.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RomanNumerals.1; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 			children = (
 				299EF98E17BC76E600D13434 /* main.c */,
 				299EF99017BC76E600D13434 /* RomanNumerals.1 */,
+				291A91E117C0799F0085F677 /* main.h */,
 			);
 			path = RomanNumerals;
 			sourceTree = "<group>";
@@ -227,6 +229,7 @@
 				299EF99617BC76E600D13434 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
