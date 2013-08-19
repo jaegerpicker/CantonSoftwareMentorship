@@ -62,6 +62,10 @@
             argument = "/Users/shawn/Documents/CantonSoftwareMentorship/201309_RomanNumerals/sample_data/input-1MilLines.txt"
             isEnabled = "YES">
          </CommandLineArgument>
+         <CommandLineArgument
+            argument = "l"
+            isEnabled = "YES">
+         </CommandLineArgument>
       </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
