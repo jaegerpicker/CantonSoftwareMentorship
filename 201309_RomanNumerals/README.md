@@ -13,19 +13,21 @@ Write a program to convert a cardinal number to a Roman numeral.
 Input sample:
 
 Your program should accept as its first argument a path to a filename. Input example is the following
-
+```
 159
 296
 3992
+```
 Input numbers are in range [1, 3999]
 
 Output sample:
 
 Print out Roman numerals.
-
+```
 CLIX
 CCXCVI
 MMMCMXCII
+```
 
 For extra ... erm credit? I guess, convert the resulting roman numeral to integer again. Extra, Extra credit make the program 
 generate an array of random numbers in the range of [1, 3999] instead of reading it via the file.
