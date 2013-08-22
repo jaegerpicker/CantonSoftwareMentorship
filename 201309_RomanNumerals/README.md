@@ -11,6 +11,7 @@ XC (90). So the Roman numeral representations for 24, 39, 44, 49, and 94 are XXI
 Write a program to convert a cardinal number to a Roman numeral.
 
 Input sample:
+-------------
 
 Your program should accept as its first argument a path to a filename. Input example is the following
 ```
@@ -21,6 +22,7 @@ Your program should accept as its first argument a path to a filename. Input exa
 Input numbers are in range [1, 3999]
 
 Output sample:
+--------------
 
 Print out Roman numerals.
 ```
