@@ -11,7 +11,7 @@ def write_time(lang, runtime, version, author, time, row, sheet):
 
 row = 0
 col = 0
-loop_times = 10
+loop_times = 1
 wb = Workbook("RomanNumeralsTimeResults.xlsx", {'constant_memory': True})
 sheet = wb.add_worksheet("data")
 sheet.write(row, col, "Langauge")
@@ -140,6 +140,22 @@ for j in range(0, loop_times):
 	print "NodeJS took: " + str(diff) + " milliseconds"
 	write_time(langauge, 1, 1, user, diff, row, sheet)
 	row += 1
+################NodeJS 2######################
+for j in range(0, loop_times):
+	start = int(round(time.time() * 1000))
+	dir_path = "/Users/" + os_user + "/Documents/CantonSoftwareMentorship/201309_RomanNumerals/"
+	langauge = "NodeJS2"
+	runtime_path = "node "
+	exe_path = "solution.js"
+	#print runtime_path + " " + dir_path + user + "-" + month + "-" + langauge + "-" + challenge + "/" + exe_path + " " + sample_data
+	p1 = Popen(runtime_path + " " + dir_path + user + "-" + month + "-" + langauge + "-" + challenge + "/" + exe_path + " " + sample_data, shell=True, stdout=PIPE)
+	output = p1.stdout.read()
+	#call([runtime_path, dir_path + user + "-" + month + "-" + langauge + "-" + challenge + "/" + exe_path, sample_data])
+	end = int(round(time.time() * 1000))
+	diff = end - start
+	print "NodeJS2 took: " + str(diff) + " milliseconds"
+	write_time(langauge, 1, 1, user, diff, row, sheet)
+	row += 1
 ##################ObjC #######################
 for j in range(0, loop_times):
 	start = int(round(time.time() * 1000))
@@ -194,6 +210,21 @@ for j in range(0, loop_times):
 	end = int(round(time.time() * 1000))
 	diff = end - start
 	print "Scala took: " + str(diff) + " milliseconds"
+	write_time(langauge, 1, 1, user, diff, row, sheet)
+	row += 1
+#####################Scala Compiled####################
+for j in range(0, loop_times):
+	start = int(round(time.time() * 1000))
+	dir_path = "/Users/" + os_user + "/Documents/CantonSoftwareMentorship/201309_RomanNumerals/"
+	langauge = "Scala"
+	runtime_path = "scala" 
+	exe_path = "Solution"
+	#print runtime_path + " " + "-classpath " + dir_path + user + "-" + month + "-" + langauge + "-" + challenge + "/src/ " + " " + exe_path + " " + sample_data 
+	p1 = Popen(runtime_path + " " + "-classpath " + dir_path + user + "-" + month + "-" + langauge + "-" + challenge + "/src/ " + " " + exe_path + " " + sample_data , shell=True, stdout=PIPE)
+	output = p1.stdout.read()
+	end = int(round(time.time() * 1000))
+	diff = end - start
+	print "ScalaCompiled took: " + str(diff) + " milliseconds"
 	write_time(langauge, 1, 1, user, diff, row, sheet)
 	row += 1
 wb.close()
