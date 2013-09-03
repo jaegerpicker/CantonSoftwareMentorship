@@ -9,15 +9,18 @@ import (
 	//"strings"
 	"strconv"
 	"time"
+	//"flag"
 )
+var values = [13]int{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1}
+var numerals = [13]string{"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"}
 func readLines(path string) (err error) {
 	var (
 		file *os.File
 		part []byte
 		prefix bool
 		)
-	values := [13]int{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1}
-	numerals := [13]string{"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"}
+	
+	
 	if file, err = os.Open(path); err != nil {
 		return
 	}
@@ -32,7 +35,7 @@ func readLines(path string) (err error) {
 		}
 		buffer.Write(part)
 		if !prefix {
-			convert_num_to_roman(count, buffer.String(), values, numerals)
+			convert_num_to_roman(count, buffer.String())
 			count++
 			//lines = append(lines, buffer.String())
 			buffer.Reset()
@@ -44,7 +47,7 @@ func readLines(path string) (err error) {
 	return
 }
 
-func convert_num_to_roman(count int, line string, values [13]int, numerals [13]string) {
+func convert_num_to_roman(count int, line string) {
 	//fmt.Println(line)
 	res := ""
 	number, err := strconv.Atoi(line)
@@ -61,9 +64,11 @@ func convert_num_to_roman(count int, line string, values [13]int, numerals [13]s
 	fmt.Print(count)
 	fmt.Println(": " + res)
 }
-
+//var cpuprofile = flag.String("cpuprofile", "", "write cpu profile to file")
+//var inputfile = flag.String("inputfile", "", "file to read data from")
 func main() {
 	start := time.Now()
+	//flag.Parse()
 	err := readLines(os.Args[1])
 	if err != nil {
 		fmt.Println("Error: %s\n", err)
@@ -75,5 +80,4 @@ func main() {
 	fmt.Print("It took me: ")
 	fmt.Print(diff)
 	fmt.Println(" milliseconds")
-
 }
