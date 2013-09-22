@@ -11,9 +11,9 @@ class Integer
 end
 
 class UglyStringHunter
-  attr_writer :string
+  attr_reader :string
   def initialize(string='')
-    self.string = string.to_s
+    @string = string.to_s
   end
   def variations
     return [@string] if @string.length == 1
@@ -24,16 +24,19 @@ class UglyStringHunter
 
     result.each { |s| s.prepend(prefix) }
   end
-  def next_variations(a_string)
-    return [] if a_string.length == 0
-    a_string[0] = ''
-    first_char = a_string[0]
-    this_set = [first_char, "-#{first_char}", "+#{first_char}"]
-    if a_string.length == 1 then
+  def next_variations(partial_string)
+    return [] if partial_string.length == 0
+    partial_string[0] = ''
+    this_set = prefix_set partial_string
+    if partial_string.length == 1 then
       return this_set
     end
-    next_set = next_variations(a_string)
+    next_set = next_variations(partial_string)
     add_prefix_to_set this_set, next_set
+  end
+  def prefix_set partial_string
+    first_char = partial_string[0]
+    [first_char, "-#{first_char}", "+#{first_char}"]
   end
   def add_prefix_to_set prefix_set, postfix_set
     result = []
@@ -64,9 +67,11 @@ class UglyStringHunter
 end
 
 ARGV.each do |arg|
-  File.open(arg, "r").each_line do |line|
-    solver = UglyStringHunter.new line.strip
-    puts solver.how_ugly?
+  if !arg.include? '.rb'
+    File.open(arg, "r").each_line do |line|
+      solver = UglyStringHunter.new line.strip
+      puts solver.how_ugly?
+    end
   end
 end
 
