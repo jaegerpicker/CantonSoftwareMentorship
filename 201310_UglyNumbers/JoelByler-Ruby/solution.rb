@@ -11,9 +11,9 @@ class Integer
 end
 
 class UglyStringHunter
-  attr_reader :string
+  attr_writer :string
   def initialize(string='')
-    @string = string
+    self.string = string.to_s
   end
   def variations
     return [@string] if @string.length == 1
@@ -42,7 +42,7 @@ class UglyStringHunter
     result
   end
   def evaluate(formula)
-    formula['-'] = '+-' if formula.include? '-'
+    formula.gsub! '-', '+-'
     result = 0
     formula.split('+').each do |number|
       result = result + number.to_i
@@ -60,12 +60,12 @@ class UglyStringHunter
   end
 end
 
-# ARGV.each do |arg|
-#   File.open(arg, "r").each_line do |line|
-#     solver = RomanNumber.new line.to_i
-#     puts solver.to_s
-#   end
-# end
+ARGV.each do |arg|
+  File.open(arg, "r").each_line do |line|
+    solver = UglyStringHunter.new line.strip
+    puts solver.how_ugly?
+  end
+end
 
 describe UglyStringHunter do
   it 'there is only one variation with for string [1]' do
@@ -77,7 +77,7 @@ describe UglyStringHunter do
     variations.include?('1+2').should be_true
     variations.include?('1-2').should be_true
   end
-  it 'there are nine variations with 111' do
+  it 'there are nine variations with 123' do
     variations = UglyStringHunter.new('123').variations
     variations.include?('123').should be_true
     variations.include?('1+23').should be_true
@@ -110,6 +110,9 @@ describe UglyStringHunter do
 end
 
 describe Integer do
+  it '0 is ugly' do
+    0.ugly?.should be_true
+  end
   it '1 is not ugly' do
     1.ugly?.should be_false
   end
@@ -141,4 +144,3 @@ describe Integer do
     121.ugly?.should be_false
   end    
 end
-
