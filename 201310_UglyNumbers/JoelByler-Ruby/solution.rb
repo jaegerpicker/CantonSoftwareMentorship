@@ -33,10 +33,13 @@ class UglyStringHunter
       return this_set
     end
     next_set = next_variations(a_string)
+    add_prefix_to_set this_set, next_set
+  end
+  def add_prefix_to_set prefix_set, postfix_set
     result = []
-    this_set.each do |prefix|
-      next_set.each do |end_part|
-        result << "#{prefix}#{end_part}"
+    prefix_set.each do |prefix|
+      postfix_set.each do |postfix|
+        result << "#{prefix}#{postfix}"
       end
     end
     result
