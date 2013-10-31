@@ -1,0 +1,42 @@
+# Coded solution in python using simplegui via codeskulptor.org
+# Original file here: http://www.codeskulptor.org/#user22_QxyTLg5Q7v_43.py
+# by Josh Chance
+
+import simplegui
+
+global var_x
+global var_y
+
+def init():
+    global var_x, var_y
+    var_x = 999
+    var_y = 999
+
+def go(x,y):
+    return x * y
+
+def do():
+    global var_x, var_y
+    splice_this = str(go(var_x, var_y))
+
+    side_a = splice_this[0], splice_this[1], splice_this[2]
+    side_b = splice_this[-1], splice_this[-2], splice_this[-3]
+
+    
+    if(side_a != side_b):
+        if(var_x > 900):
+            var_x = var_x -1
+            do()
+        else:
+            var_x = 999
+            var_y = var_y -1
+            do()
+    else:
+        print 'match! ', splice_this
+        print 'made from ', var_x, var_y
+    
+
+init()
+do()
+
+# Answer: 913 * 993 = 906609 !
