@@ -8,8 +8,8 @@ class Fixnum
           x.upto(max) do |y|
               product = x * y
               if product.is_palindrome?
-                  if x * y > answer
-                      answer = x * y
+                  if product > answer
+                      answer = product
                   end
               end
           end
