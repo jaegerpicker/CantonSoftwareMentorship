@@ -1,6 +1,5 @@
 class Triangle
     attr_reader :a, :b, :c
-    #attr_writer :perimeter
     def initialize perimeter
         @perimeter = perimeter
         find_sides
@@ -36,5 +35,4 @@ class Triangle
 end
 
 t = Triangle.new 1000
-puts t.a.to_s + '^2 + ' + t.b.to_s + '^2 = ' + t.c.to_s + '^2'
 puts t.a * t.b * t.c
